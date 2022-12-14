@@ -1,0 +1,53 @@
+/*1fr=25% of total available space */ 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5, 1fr));
+    grid-template-rows: 1fr 9fr 1fr;
+    text-align: center;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end:6 ;
+    color: white;
+    background-color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h1::first-letter{
+    color: red;
+    font-family: cursive;
+    font-size:55px;
+}
+.Nav{
+    grid-column-start: 1;
+    grid-column-end:2;
+    background-color:rgb(243, 164, 164);
+}
+.Main{
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end:5;
+}
+.main-head::first-letter{
+    color: red;
+    font-size: 55px;
+    font-family: cursive;
+}
+.Ads{
+    grid-column-start: 5;
+    grid-column-end:6;
+    background-color: teal;
+}
+.Footer{    
+    grid-column-start: 1;
+    grid-column-end:6;
+    color: white;
+    background-color: #272727;
+    
+}
